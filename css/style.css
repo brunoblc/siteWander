@@ -827,33 +827,59 @@ a:focus {
   position: relative;
 }
 
+.team_section .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 370px;
+  height: 520px; 
+  background-color: rgba(28, 28, 28, 0.75);
+  padding-bottom: 10px;
+}
+
 .team_section .box .img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  height: 370px; 
+  overflow: hidden; 
 }
 
 .team_section .box .img-box img {
-  max-width: 540px;
-  max-height: 500px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  text-align: center;
+  display: block;
+}
 
+.team_section .detail-box h5 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.team_section .detail-box h6 {
+  font-size: 14px;
+  font-weight: normal;
 }
 
 .team_section .box .detail-box {
-  position: absolute;
   width: 100%;
+  height: 150px; 
   color: #ffffff;
-  padding: 25px 15px;
+  padding: 15px;
   text-align: center;
-  bottom: 0;
   background-color: rgba(28, 28, 28, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .team_section .btn-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 45px;
 }
 
@@ -862,9 +888,9 @@ a:focus {
   padding: 10px 45px;
   background-color: #800000;
   color: #ffffff;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: 1px solid transparent;
+  text-align: center;
 }
 
 .team_section .btn-box a:hover {
