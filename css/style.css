@@ -48,6 +48,40 @@ body {
   padding-bottom: 10px;
 }
 
+
+.heading_container2.heading_center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+.heading_container2 h2 {
+  position: relative;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  color: #fcf3f3;
+  margin-top: 50px;
+}
+
+.heading_container2 h2::before {
+  content: "";
+  width: 40px;
+  height: 7px;
+  background-color: #de1809;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.heading_container2.heading_center h2::before {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
 .heading_container h2::before {
   content: "";
   width: 40px;
@@ -57,6 +91,43 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.contactzap {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os itens */
+  gap: 10px; /* Espaçamento entre os elementos */
+}
+
+.contactzap i{
+  margin-top: 20px;
+  color: #de1809;
+  text-align: center;
+  font-size: 22px;
+}
+
+.btn-red {
+  display: block;
+  width: fit-content; 
+  margin: 10px auto; 
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn-red:hover {
+  background-color: darkred;
+}
+
+.contactzap span{
+  color: white;
+  font-size: 18px;
 }
 
 .heading_container.heading_center {
@@ -173,7 +244,7 @@ body {
 
 .header_top .contact_link-container a i {
   font-size: 20px;
-  color: #800000;
+  color: #de1809;
   margin-right: 5px;
 }
 
@@ -339,7 +410,7 @@ a:focus {
 }
 
 .slider_section .detail-box h1 span {
-  color: #8B0000;
+  color: #de1809;
 }
 
 .slider_section .detail-box p {
@@ -378,7 +449,7 @@ a:focus {
 .slider_section .detail-box .btn-box .btn-2 {
   display: inline-block;
   padding: 10px 35px;
-  background-color: #800000;
+  background-color: #de1809;
   color: #ffffff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -386,9 +457,9 @@ a:focus {
 }
 
 .slider_section .detail-box .btn-box .btn-2:hover {
-  background-color: rgb(146, 145, 145);
+  background-color: rgb(48, 4, 4);
   border-color: #060606;
-  color: #010101;
+  color: #c7c4c4;
 }
 
 .slider_section .img-box {
@@ -418,7 +489,7 @@ a:focus {
   height: 20px;
   border-radius: 100%;
   text-align: center;
-  background-color: #6c1202;
+  background-color: #de1809;
   opacity: 1;
   border: none;
   margin: 0 4px;
@@ -507,10 +578,11 @@ a:focus {
   margin-bottom: 20px;
 }
 
+
 .service_section .box .detail-box a {
   display: inline-block;
   padding: 8px 35px;
-  background-color: #800000;
+  background-color: #de1809;
   color: #ffffff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
