@@ -549,7 +549,6 @@ a:focus {
 
 .detail-box p{
   margin-top: 25px;
-  height: 150px;
 }
 
 .service_section .box .detail-box {
@@ -1055,13 +1054,6 @@ a:focus {
   color: rgba(254, 254, 255, 0.7);
 }
 
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .serv-img {
   width: 100%;
   height: auto;
@@ -1140,11 +1132,6 @@ a:focus {
     max-height: 200px;
   }
 
-  .detail-box p{
-    height: 130px;
-    width: 300px;
-  }
-
   .serv-img {
     height: auto;
     max-width: 100%;
@@ -1199,7 +1186,6 @@ a:focus {
 
   /* Ajuste para evitar corte de imagens no modo paisagem */
   .service_section .box {
-    width: 90%;
     margin-bottom: 15px;
   }
 
@@ -1217,10 +1203,6 @@ a:focus {
   .slider_section .detail-box h1 {
     font-size: 1.8rem;
     line-height: 42px;
-  }
-
-  .btn-box {
-    flex-direction: column;
   }
 
   .btn-box a {
@@ -1245,7 +1227,7 @@ a:focus {
   .service_section .box img {
     max-width: 100%;
     height: auto;
-    max-height: 150px;
+    max-height: 200px;
     object-fit: contain;
   }
 }
